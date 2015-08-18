@@ -12,6 +12,7 @@ class SQLSum(BaseSQLSum):
 
 
 class BooleanSum(Sum):
+    function = None
     def add_to_query(self, query, alias, col, source, is_summary):
         aggregate = SQLSum(col, source=source, is_summary=is_summary, **self.extra)
         query.aggregates[alias] = aggregate
