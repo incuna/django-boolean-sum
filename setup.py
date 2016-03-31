@@ -4,7 +4,7 @@ from setuptools import setup
 setup(
     name='django-boolean-sum',
     py_modules=['django_boolean_sum'],
-    version='0.1',
+    version='0.2',
     description='',
     long_description=open('README.rst').read(),
     author='Incuna Ltd.',
@@ -13,4 +13,3 @@ setup(
     install_requires=[],
     zip_safe=False,
 )
-
